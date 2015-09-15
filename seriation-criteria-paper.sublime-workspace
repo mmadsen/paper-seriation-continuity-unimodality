@@ -1,0 +1,528 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"test",
+				"test_tasampled_indices"
+			],
+			[
+				"eq4_p",
+				"eq4_pop_df"
+			],
+			[
+				"model",
+				"model_class_label"
+			],
+			[
+				"tassize",
+				"tassize_perlocus_results"
+			],
+			[
+				"eq4_",
+				"eq4_ta_sampled_df"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "%%%%%%%%%%%%%%%%%%%% author.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n%\n% sample root file for your \"contribution\" to a contributed volume\n%\n% Use this file as a template for your own input.\n%\n%%%%%%%%%%%%%%%% Springer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n\n\n% RECOMMENDED %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n\\documentclass[graybox,natbib]{svmult}\n\n% choose options for [] as required from the list\n% in the Reference Guide\n%% The amssymb package provides various useful mathematical symbols\n\\usepackage{amssymb,amsmath}\n\n\\usepackage{mathptmx}       % selects Times Roman as basic font\n\\usepackage{helvet}         % selects Helvetica as sans-serif font\n\\usepackage{courier}        % selects Courier as typewriter font\n\\usepackage{type1cm}        % activate if the above 3 fonts are\n                            % not available on your system\n\\usepackage{url}\n%\n\\usepackage{makeidx}         % allows index generation\n\\usepackage{graphicx}        % standard LaTeX graphics tool\n                             % when including figure files\n\\usepackage{multicol}        % used for the two-column index\n\\usepackage[bottom]{footmisc}% places footnotes at page bottom\n\n\\usepackage{lipsum}\n\\usepackage{gitinfo}\n\\usepackage[section,ruled]{algorithm}\n\\usepackage{algorithmic}\n\\usepackage{boxedminipage}\n%\\usepackage[xetex,bookmarks=true,linkcolor=blue,hyperfootnotes=false,breaklinks=true,citecolor=blue,colorlinks=true]{hyperref}\n\\usepackage{sistyle}\n\\usepackage{xspace}\n\\SIthousandsep{,}\n\n% see the list of further useful packages\n% in the Reference Guide\n\n\\makeindex             % used for the subject index\n                       % please use the style svind.ist with\n                       % your makeindex program\n\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n\n\\begin{document}\n\\motto{Manuscript version: \\gitCommitterDate: \\gitAbbrevHash\\xspace in preparation for Journal X}\n\n\\title*{PAPER TITLE}\n\\titlerunning{Running Title}\n% Use \\titlerunning{Short Title} for an abbreviated version of\n% your contribution title if the original one is too long\n\\author{Mark E. Madsen \\and Carl P. Lipo}\n% Use \\authorrunning{Short Title} for an abbreviated version of\n% your contribution title if the original one is too long\n\\institute{\nMark E. Madsen \\at Dept. of Anthropology, University of Washington, Box 353100, Seattle, WA 98195\\\\  \\email{mark} \n\\and \nCarl P. Lipo \\at Program in Environmental Studies and Dept. of Anthropology, SUNY Binghamton, Binghamton, NY 13902\\\\  \\email{carl}\n}\n\n\n%\n% Use the package \"url.sty\" to avoid\n% problems with special characters\n% used in your e-mail or web address\n%\n\\maketitle\n\n\\abstract{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra est est. Proin eget tellus metus. Aenean ac tortor pharetra libero ultricies sagittis. Nulla facilisi. Cras tincidunt interdum tellus, quis consectetur nunc facilisis nec. Sed fermentum erat a ligula posuere quis semper risus ullamcorper. Morbi vel tincidunt augue. Nam dolor ipsum, sagittis quis dignissim eu, pulvinar sed magna. In interdum magna eu orci facilisis congue. Cras a tellus et lorem sagittis viverra. Donec risus lectus, mollis at dignissim viverra, dapibus a nulla. Vivamus porttitor scelerisque turpis, eget lobortis orci auctor eget. Donec ultricies enim ac augue porttitor convallis. Pellentesque nisl lorem, consequat a facilisis in, ornare sed lorem. In luctus, elit ac mattis dapibus, lacus elit varius tortor, vel sollicitudin massa nisl id massa.  Ut sit amet nibh a sem egestas sollicitudin. Vestibulum scelerisque, dui at tincidunt accumsan, ipsum enim feugiat neque, vel interdum turpis lectus sed nisi. Nullam ultrices sodales sem, et placerat nunc euismod eu. Duis leo lacus, semper quis eleifend vitae, viverra ut nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin rutrum eleifend est, id tempor velit viverra sed.}\n\n\\section*{Outline}\n\\setcounter{minitocdepth}{2}\n\\dominitoc\n\n\\section{Introduction}\\label{introduction}\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum\nviverra est est. Proin eget tellus metus. Aenean ac tortor pharetra\nlibero ultricies sagittis. Nulla facilisi. Cras tincidunt interdum\ntellus, quis consectetur nunc facilisis nec. Sed fermentum erat a ligula\nposuere quis semper risus ullamcorper. Morbi vel tincidunt augue. Nam\ndolor ipsum, sagittis quis dignissim eu, pulvinar sed magna. In interdum\nmagna eu orci facilisis congue. Cras a tellus et lorem sagittis viverra.\nDonec risus lectus, mollis at dignissim viverra, dapibus a nulla.\nVivamus porttitor scelerisque turpis, eget lobortis orci auctor eget.\nDonec ultricies enim ac augue porttitor convallis. Pellentesque nisl\nlorem, consequat a facilisis in, ornare sed lorem. In luctus, elit ac\nmattis dapibus, lacus elit varius tortor, vel sollicitudin massa nisl id\nmassa. Ut sit amet nibh a sem egestas sollicitudin. Vestibulum\nscelerisque, dui at tincidunt accumsan, ipsum enim feugiat neque, vel\ninterdum turpis lectus sed nisi. Nullam ultrices sodales sem, et\nplacerat nunc euismod eu. Duis leo lacus, semper quis eleifend vitae,\nviverra ut nisl. Vestibulum ante ipsum primis in faucibus orci luctus et\nultrices posuere cubilia Curae; Proin rutrum eleifend est, id tempor\nvelit viverra sed.\n\n\\section{Methods}\\label{methods}\n\n\\begin{equation}\\label{eq:axelrod}p(i,j) = \\frac{1}{F} \\sum_{f=1}^{F} \\delta_{\\sigma_f(i)\\sigma_f(j)}\\end{equation}\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum\nviverra est est. Proin eget tellus metus. Aenean ac tortor pharetra\nlibero ultricies sagittis. Nulla facilisi. Cras tincidunt interdum\ntellus, quis consectetur nunc facilisis nec. Sed fermentum erat a ligula\nposuere quis semper risus ullamcorper. Morbi vel tincidunt augue. Nam\ndolor ipsum, sagittis quis dignissim eu, pulvinar sed magna. In interdum\nmagna eu orci facilisis congue. Cras a tellus et lorem sagittis viverra.\nDonec risus lectus, mollis at dignissim viverra, dapibus a nulla.\nVivamus porttitor scelerisque turpis, eget lobortis orci auctor eget.\nDonec ultricies enim ac augue porttitor convallis. Pellentesque nisl\nlorem, consequat a facilisis in, ornare sed lorem. In luctus, elit ac\nmattis dapibus, lacus elit varius tortor, vel sollicitudin massa nisl id\nmassa. Ut sit amet nibh a sem egestas sollicitudin. Vestibulum\nscelerisque, dui at tincidunt accumsan, ipsum enim feugiat neque, vel\ninterdum turpis lectus sed nisi. Nullam ultrices sodales sem, et\nplacerat nunc euismod eu. Duis leo lacus, semper quis eleifend vitae,\nviverra ut nisl. Vestibulum ante ipsum primis in faucibus orci luctus et\nultrices posuere cubilia Curae; Proin rutrum eleifend est, id tempor\nvelit viverra sed \\citep{mayr1959mayr}.\n\n\\section{Experiments}\\label{experiments}\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum\nviverra est est. Proin eget tellus metus. Aenean ac tortor pharetra\nlibero ultricies sagittis. Nulla facilisi. Cras tincidunt interdum\ntellus, quis consectetur nunc facilisis nec. Sed fermentum erat a ligula\nposuere quis semper risus ullamcorper. Morbi vel tincidunt augue. Nam\ndolor ipsum, sagittis quis dignissim eu, pulvinar sed magna. In interdum\nmagna eu orci facilisis congue. Cras a tellus et lorem sagittis viverra.\nDonec risus lectus, mollis at dignissim viverra, dapibus a nulla.\nVivamus porttitor scelerisque turpis, eget lobortis orci auctor eget.\nDonec ultricies enim ac augue porttitor convallis. Pellentesque nisl\nlorem, consequat a facilisis in, ornare sed lorem. In luctus, elit ac\nmattis dapibus, lacus elit varius tortor, vel sollicitudin massa nisl id\nmassa. Ut sit amet nibh a sem egestas sollicitudin. Vestibulum\nscelerisque, dui at tincidunt accumsan, ipsum enim feugiat neque, vel\ninterdum turpis lectus sed nisi. Nullam ultrices sodales sem, et\nplacerat nunc euismod eu. Duis leo lacus, semper quis eleifend vitae,\nviverra ut nisl. Vestibulum ante ipsum primis in faucibus orci luctus et\nultrices posuere cubilia Curae; Proin rutrum eleifend est, id tempor\nvelit viverra sed.\n\n\\section{Results}\\label{results}\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum\nviverra est est. Proin eget tellus metus. Aenean ac tortor pharetra\nlibero ultricies sagittis. Nulla facilisi. Cras tincidunt interdum\ntellus, quis consectetur nunc facilisis nec. Sed fermentum erat a ligula\nposuere quis semper risus ullamcorper. Morbi vel tincidunt augue. Nam\ndolor ipsum, sagittis quis dignissim eu, pulvinar sed magna. In interdum\nmagna eu orci facilisis congue. Cras a tellus et lorem sagittis viverra.\nDonec risus lectus, mollis at dignissim viverra, dapibus a nulla.\nVivamus porttitor scelerisque turpis, eget lobortis orci auctor eget.\nDonec ultricies enim ac augue porttitor convallis. Pellentesque nisl\nlorem, consequat a facilisis in, ornare sed lorem. In luctus, elit ac\nmattis dapibus, lacus elit varius tortor, vel sollicitudin massa nisl id\nmassa. Ut sit amet nibh a sem egestas sollicitudin. Vestibulum\nscelerisque, dui at tincidunt accumsan, ipsum enim feugiat neque, vel\ninterdum turpis lectus sed nisi. Nullam ultrices sodales sem, et\nplacerat nunc euismod eu. Duis leo lacus, semper quis eleifend vitae,\nviverra ut nisl. Vestibulum ante ipsum primis in faucibus orci luctus et\nultrices posuere cubilia Curae; Proin rutrum eleifend est, id tempor\nvelit viverra sed.\n\n\\section{Discussion}\\label{discussion}\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum\nviverra est est. Proin eget tellus metus. Aenean ac tortor pharetra\nlibero ultricies sagittis. Nulla facilisi. Cras tincidunt interdum\ntellus, quis consectetur nunc facilisis nec. Sed fermentum erat a ligula\nposuere quis semper risus ullamcorper. Morbi vel tincidunt augue. Nam\ndolor ipsum, sagittis quis dignissim eu, pulvinar sed magna. In interdum\nmagna eu orci facilisis congue. Cras a tellus et lorem sagittis viverra.\nDonec risus lectus, mollis at dignissim viverra, dapibus a nulla.\nVivamus porttitor scelerisque turpis, eget lobortis orci auctor eget.\nDonec ultricies enim ac augue porttitor convallis. Pellentesque nisl\nlorem, consequat a facilisis in, ornare sed lorem. In luctus, elit ac\nmattis dapibus, lacus elit varius tortor, vel sollicitudin massa nisl id\nmassa. Ut sit amet nibh a sem egestas sollicitudin. Vestibulum\nscelerisque, dui at tincidunt accumsan, ipsum enim feugiat neque, vel\ninterdum turpis lectus sed nisi. Nullam ultrices sodales sem, et\nplacerat nunc euismod eu. Duis leo lacus, semper quis eleifend vitae,\nviverra ut nisl. Vestibulum ante ipsum primis in faucibus orci luctus et\nultrices posuere cubilia Curae; Proin rutrum eleifend est, id tempor\nvelit viverra sed.\n\n\\section{Acknowledgements}\\label{acknowledgements}\n\nLorem Ipsum\n\n\n%% References with bibTeX database:\n\n\\bibliographystyle{model2-names}\n\\bibliography{lipomadsen-seriation-criteria-paper}\n\n\\end{document}\n",
+			"file": "/Users/mark/src/lipomadsen-seriation-criteria-paper/lipomadsen-seriation-criteria-paper.tex",
+			"file_size": 10881,
+			"file_write_time": 130753248680000000,
+			"settings":
+			{
+				"buffer_size": 10881,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "%%%%%%%%%%%%%%%%%%%% author.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n%\n% sample root file for your \"contribution\" to a contributed volume\n%\n% Use this file as a template for your own input.\n%\n%%%%%%%%%%%%%%%% Springer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n\n\n% RECOMMENDED %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n\\documentclass[graybox,natbib]{svmult}\n\n% choose options for [] as required from the list\n% in the Reference Guide\n%% The amssymb package provides various useful mathematical symbols\n\\usepackage{amssymb,amsmath}\n\n\\usepackage{mathptmx}       % selects Times Roman as basic font\n\\usepackage{helvet}         % selects Helvetica as sans-serif font\n\\usepackage{courier}        % selects Courier as typewriter font\n\\usepackage{type1cm}        % activate if the above 3 fonts are\n                            % not available on your system\n\\usepackage{url}\n%\n\\usepackage{makeidx}         % allows index generation\n\\usepackage{graphicx}        % standard LaTeX graphics tool\n                             % when including figure files\n\\usepackage{multicol}        % used for the two-column index\n\\usepackage[bottom]{footmisc}% places footnotes at page bottom\n\n\\usepackage{lipsum}\n\\usepackage{gitinfo}\n\\usepackage[section,ruled]{algorithm}\n\\usepackage{algorithmic}\n\\usepackage{boxedminipage}\n%\\usepackage[xetex,bookmarks=true,linkcolor=blue,hyperfootnotes=false,breaklinks=true,citecolor=blue,colorlinks=true]{hyperref}\n\\usepackage{sistyle}\n\\usepackage{xspace}\n\\SIthousandsep{,}\n\n% see the list of further useful packages\n% in the Reference Guide\n\n\\makeindex             % used for the subject index\n                       % please use the style svind.ist with\n                       % your makeindex program\n\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n\n\\begin{document}\n\\motto{Manuscript version: \\gitCommitterDate: \\gitAbbrevHash\\xspace in preparation for Journal X}\n\n\\title*{Seriation, Unimodality, and the Study of Cultural Relatedness}\n\\titlerunning{Seriation, Unimodality, and the Study of Cultural Relatedness}\n% Use \\titlerunning{Short Title} for an abbreviated version of\n% your contribution title if the original one is too long\n\\author{Mark E. Madsen \\and Carl P. Lipo}\n% Use \\authorrunning{Short Title} for an abbreviated version of\n% your contribution title if the original one is too long\n\\institute{\nMark E. Madsen \\at Dept. of Anthropology, University of Washington, Box 353100, Seattle, WA 98195\\\\  \\email{mark} \n\\and \nCarl P. Lipo \\at Program in Environmental Studies and Dept. of Anthropology, SUNY Binghamton, Binghamton, NY 13902\\\\  \\email{carl}\n}\n\n\n%\n% Use the package \"url.sty\" to avoid\n% problems with special characters\n% used in your e-mail or web address\n%\n\\maketitle\n\n\\abstract{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra est est. Proin eget tellus metus. Aenean ac tortor pharetra libero ultricies sagittis. Nulla facilisi. Cras tincidunt interdum tellus, quis consectetur nunc facilisis nec. Sed fermentum erat a ligula posuere quis semper risus ullamcorper. Morbi vel tincidunt augue. Nam dolor ipsum, sagittis quis dignissim eu, pulvinar sed magna. In interdum magna eu orci facilisis congue. Cras a tellus et lorem sagittis viverra.}\n\n\\section*{Outline}\n\\setcounter{minitocdepth}{2}\n\\dominitoc\n\n$body$\n\n\n%% References with bibTeX database:\n\n\\bibliographystyle{model2-names}\n\\bibliography{$biblio-files$}\n\n\\end{document}\n",
+			"file": "/Users/mark/src/lipomadsen-seriation-criteria-paper/xelatex-template.tex",
+			"file_size": 4219,
+			"file_write_time": 130753249300000000,
+			"settings":
+			{
+				"buffer_size": 3441,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Makefile/Make.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/Makefile/Make.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"Ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"quit()",
+			"ls",
+			"cd presentation",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/mark/src/paper-seriation-continuity-unimodality"
+	],
+	"file_history":
+	[
+		"/Users/mark/src/paper-seriation-continuity-unimodality/xelatex-template.tex",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/simulations/equifinality-5/expconfig/conformist-mixture-priors.json",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/simulations/equifinality-5/conf/equifinality-conformism-variable.json",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/simulations/equifinality-5/conf/equifinality-conformism-fixed.json",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/simulations/equifinality-5/conf/equifinality-anticonformism-variable.json",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/simulations/equifinality-5/conf/equifinality-anticonformism-fixed.json",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/simulations/equifinality-5/README.md",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/paper/Makefile",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/paper/madsen2015-ctmixtures.tex",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/paper/madsen2015-ctmixtures.Rmd",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/paper/plos_template.tex",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/paper/plaincitation.sed",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/paper/elsarticle-template.tex",
+		"/Users/mark/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/mark/src/mmadsenr/R/plotting.r",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/analysis/equifinality-4/vertical-dotcharts-results.r",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/analysis/equifinality-4/merge-classification-results.r",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/analysis/equifinality-4/combined-tasampled-duration-hidden-analysis.r",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/analysis/equifinality-4/perlocus-analysis.r",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/analysis/equifinality-4/perlocus-tasampled-classification-analysis.r",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/analysis/equifinality-4/population-classification.r",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/analysis/equifinality-4/tasampled-classification-analysis.r",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/analysis/equifinality-4/test/test-population.r",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/analysis/equifinality-4/test/test-tasampled.r",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/analysis/equifinality-4/bias-model-classification-analysis.r",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/analysis/equifinality-4/bias-neutral-comparison.r",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/analysis/equifinality-4/perlocus-tasampled-classification-analysis.R",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/analysis/equifinality-4/Makefile",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/analysis/equifinality-4/test/test-bias-model-classification.r",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/analysis/equifinality-4/test/test-bias-neutral-comparison.r",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/analysis/equifinality-4/test-population.r",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/analysis/equifinality-4/eda-sampled-data.r",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/analysis/equifinality-4/data_preparation.r",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/paper/overall-algorithm.tex",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/paper/latexmkrc",
+		"/Users/mark/tmp/plosone/plos_template.tex",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/Makefile",
+		"/Users/mark/Dropbox/Research/templates/experiment-template/README.md",
+		"/Users/mark/Dropbox/Research/templates/experiment-template/paper/xelatex-template.tex",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/analysis/equifinality-3/perlocus-analysis.r",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/analysis/equifinality-3/perlocus-tasampled-classification-analysis.R",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/analysis/equifinality-3/four-class-analysis.r",
+		"/Users/mark/Library/Mail/V2/IMAP-mark@madsenlab.org@imap.gmail.com/INBOX.mbox/B54BAE98-14F7-413A-A71B-F1D6D7A15BBB/Data/9/2/4/Messages/429761.emlx",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/paper/madsen2015-ctmixtures.bbl",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/README.md",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/simulations/equifinality-2/README.md",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/simulations/equifinality-1/README.md",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/simulations/equifinality/conf/equifinality-confmixture-equal.json",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/simulations/equifinality/conf/equifinality-allneutral.json",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/simulations/equifinality/conf/equifinality-confmixture-anticonfdominant.json",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/simulations/equifinality/conf/equifinality-confmixture-confdominant.json",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/simulations/equifinality/expconfig/conformist-mixture-priors.json",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/simulations/equifinality-1/build-jobs.sh",
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/paper/latex-template.tex",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/madsenlipo2014/paper/madsenlipo2014-semanticaxelrod.Rmd",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/madsenlipo2014/paper/madsenlipo2014-semanticaxelrod.tex",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/madsenlipo2014/paper/madsenlipo-springer-final-submission/madsenlipo2014-semanticaxelrod.tex",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/madsenlipo2014/paper/madsenlipo-arxiv-from-springer-final/madsenlipo2014-semanticaxelrod.tex",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/madsenlipo2014/paper/springer-volume-final-submission/madsenlipo2014-semanticaxelrod.tex",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/madsenlipo2014/paper/author.tex",
+		"/Users/mark/src/crp/crp.rb",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-07-09-semanticaxelrod-review-revisions.md",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/madsenlipo2014/paper/simulation-parameters-table.tex",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/madsenlipo2014/paper/algorithms-appendix.tex",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/madsenlipo2014/paper/design-space-table.tex",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/madsenlipo2014/paper/pre-saa-release-arxiv/madsenlipo2014-semanticaxelrod.tex",
+		"/Users/mark/tmp/lemontest.cc",
+		"/Users/mark/src/axelrod-ct/README.md",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/madsenlipo2014/README.md",
+		"/Users/mark/tmp/test.cpp",
+		"/Users/mark/yesterday.Rmd",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/madsenlipo2014/paper/madsenlipo2014-semanticaxelrod.idx",
+		"/Users/mark/madsenlipo2014-semanticaxelrod.Rmd",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/madsenlipo2014/paper/Makefile",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/madsenlipo2014/paper/notes.txt",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/semanticaxelrod/madsenlipo2014/semanticaxelrod.sublime-project",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/semanticaxelrod/madsenlipo2014/paper/madsenlipo2014-semanticaxelrod.Rmd",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/semanticaxelrod/madsenlipo2014-semanticaxelrod/paper/madsenlipo2014-semanticaxelrod.Rmd",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/semanticaxelrod/madsenlipo2014-semanticaxelrod/outline/outline.tex",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/semanticaxelrod/madsenlipo2014-semanticaxelrod/paper/author.tex",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/semanticaxelrod/madsenlipo2014-semanticaxelrod/paper/xelatex-template.tex",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/semanticaxelrod/madsenlipo2014-semanticaxelrod/paper/algorithms-appendix.tex",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/semanticaxelrod/madsenlipo2014-semanticaxelrod/paper/simulation-parameters-table.tex",
+		"/Users/mark/src/axelrod-ct/setup.py",
+		"/Users/mark/Desktop/testdata-branch.txt",
+		"/Users/mark/Desktop/learning dynamics of costly signals",
+		"/Users/mark/Desktop/Doebli - epidemiological and multilevel selection",
+		"/Users/mark/Desktop/Adamic Talk - Rumor Propagtion Online",
+		"/Users/mark/Desktop/Sandy Pentland - Fast and Slow Social Learn",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/semanticaxelrod/madsenlipo2014-semanticaxelrod/paper/latexmkrc",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/semanticaxelrod/madsenlipo2014-semanticaxelrod/presentation/libraries/frameworks/io2012/js/prettify/lang-apollo.js",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/semanticaxelrod/madsenlipo2014-semanticaxelrod/LICENSE",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/semanticaxelrod/madsenlipo2014-semanticaxelrod/paper/madsenlipo2014-semanticaxelrod.tex",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/semanticaxelrod/madsenlipo2014-semanticaxelrod/presentation/Makefile",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/semanticaxelrod/madsenlipo2014-semanticaxelrod/.gitignore",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/semanticaxelrod/madsenlipo2014-semanticaxelrod/presentation/madsenlipo2014-semanticaxelrod-deck.Rmd",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/semanticaxelrod/madsenlipo2014-semanticaxelrod/paper/Makefile",
+		"/Users/mark/Dropbox/Research/projects/structuredinformation/semanticaxelrod/madsenlipo2014-semanticaxelrod/README.md",
+		"/Users/mark/Desktop/EDC-summit-notes.txt",
+		"/Users/mark/Dropbox/Research/websites/lnraw/doc/adding-project.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/doc/adding-experiment.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/doc/adding-experiment.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/labnotebook.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/doc/adding-project.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-10-22-metapopulation-models-diss.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-10-30-unconference-future-statistics.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-29-classification-experiment-protocol.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-09-classification-experiment-notes.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-27-classification-research-questions.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-09-26-classification-experiment-data-cleaning.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-11-03-classification-eda.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-10-23-semanticaxelrod-research-design.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-09-05-saa2014-abstract-draft.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-11-semanticaxelrod-implementation.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-11-semanticaxelrod-abstract-notes.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-11-semantic-ct-models-2007-notes.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-24-semantic-axelrod.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/default.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/project_layout.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/experiments.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/projects/coarsegraining/classification_experiment.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-09-30-medium-data.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-10-time-perspectivism-annotated-bib.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-03-31-darwinian-populational-models.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/css/default.css",
+		"/Users/mark/Dropbox/Research/websites/lnraw/blog.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/post.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/essay.html"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/analysis/equifinality-4"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"min",
+			"Min",
+			"min",
+			"Min",
+			"marin",
+			"Class",
+			"_",
+			"print",
+			"y_group_variable",
+			"y_variable_name",
+			"x_variable_name",
+			"x_label",
+			"field",
+			"field_label",
+			"field ",
+			"field",
+			"mcplot",
+			"data_directory <- \"/mnt\"",
+			"# Set up logging",
+			".n.trees = (1:10)*25",
+			"tassize_perlocus",
+			"eq4_ta_sampled_df",
+			"eq3_pop_biasdom_df",
+			"perlocus",
+			"tassize_biased_results",
+			"tassize_perlocus_results",
+			"results",
+			"eq4_pop_df",
+			"eq4_pop_subset",
+			"eq3_pop_biased",
+			"eq3_pop_df",
+			"equifinality-3",
+			"eq3_pop_biasdom_df",
+			"eq3_pop_df",
+			"equifinality-3",
+			"eq3_ta_sampled_df",
+			"equifinality-3",
+			"eq3_pop_df",
+			"equifinality-3",
+			"eq3_downsampled_df",
+			"eq3_ta_sampled_df",
+			"equifinality-3",
+			"eq3_ta_sampled_df",
+			"equifinality-4-ta-sampled-data.rda",
+			"equifinality-3",
+			"eq4_pop_df",
+			"popsampled_results",
+			"pop-sampled",
+			"popsampled_results",
+			"eq3_pop_df",
+			"equifinality-3",
+			"equifinality-4",
+			"equifinality-3",
+			"Locus",
+			"TA and Sampled",
+			"Population Census",
+			"two_class_label",
+			"popsampled_results",
+			"paper",
+			".eps",
+			".eps-eps-converted-to.pdf",
+			"figure",
+			",$",
+			"*  ,",
+			"\"",
+			"][",
+			"copy",
+			"argparse",
+			"\\text{",
+			"**",
+			"navbar",
+			"javascript",
+			"javascript\">try{Typekit.load();}catch(e){}</script>\n  <script type=\"text/javascript\" src=\"http://cdn"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"x_variable",
+			"",
+			"data_directory <- \"/mnt\"",
+			".n.trees = (2:10)*50",
+			"Loci",
+			"TA/Sampled",
+			"Census, Sampled, TA and Sampled",
+			"madsen2015-ctmixtures",
+			"",
+			"* ",
+			";"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/mark/src/lipomadsen-seriation-criteria-paper/lipomadsen-seriation-criteria-paper.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10881,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1302,
+								1302
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeXing/support/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 5.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/mark/src/lipomadsen-seriation-criteria-paper/xelatex-template.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3441,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3255,
+								3255
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeXing/support/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 565.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 123.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Makefile/Make.sublime-build",
+	"project": "seriation-criteria-paper.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"_posts/2013-08-27-classification-research-questions.md"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 525.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Dropbox/Research/websites/lnraw/lnraw.sublime-project"
+			]
+		],
+		"width": 902.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 296.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+	}
+}
